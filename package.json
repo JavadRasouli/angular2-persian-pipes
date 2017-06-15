@@ -1,0 +1,40 @@
+{
+  "name": "angular2-persian-utils",
+  "version": "0.0.0",
+  "description": "Persian utils for Angular2 applications.",
+  "author": "Javad Rasouli ",
+  "license": "MIT",
+  "keywords": [
+    "angular2",
+    "persian",
+    "utils"
+  ],
+  "scripts": {
+    "prepublish": "ngc && copyfiles -f 'src/**/*.js' 'src/**/*.js.map' 'src/**/*.d.ts' 'src/**/*.metadata.json' ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavadRasouli/angular2-persian-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JavadRasouli/angular2-persian-utils/issues"
+  },
+  "homepage": "https://github.com/JavadRasouli/angular2-persian-utils#readme",
+  "private": false,
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+	"@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/cli": "1.0.1",
+    "@angular/compiler-cli": "^4.0.0",
+    "@types/node": "~6.0.60",
+    "protractor": "~5.1.0",
+    "ts-node": "~2.0.0",
+    "copyfiles": "^1.2.0",
+    "tslint": "~4.5.0",
+    "typescript": "~2.2.0"
+  }
+}
