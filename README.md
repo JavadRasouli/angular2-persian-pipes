@@ -27,7 +27,6 @@ import {PersianUtilsModule} from 'angular2-persian-utils'
 This makes all the `angular2-persian-utils` services available for use in your app.
 
 ## Available services
----------------
 
 ### NationalCodeService
 
