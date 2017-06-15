@@ -11,7 +11,6 @@ npm install angular2-persian-utils --save
 ```
 
 ## Usage
------
 
 Import `PersianUtilsModule` into your app's modules:
 
@@ -27,20 +26,22 @@ import {PersianUtilsModule} from 'angular2-persian-utils'
 
 This makes all the `angular2-persian-utils` services available for use in your app.
 
-Available services
+## Available services
 ---------------
 
-## NationalCodeService
+### NationalCodeService
 
-### Methods
+#### Methods
 
-#### isValid(nationalId: string): boolean
------
+##### isValid(nationalId: string): boolean
+
 check nationalId is valid?
+
 nationalId >> کد ملی
 
-#### Example
-```
+##### Example
+
+```typescript
 import { Component } from '@angular/core';
 
 import {NationalCodeService} from 'angular2-persian-utils'
@@ -58,16 +59,19 @@ export class AppComponent {
 }
 ```
 
-## CompanyNationalIdService
+### CompanyNationalIdService
 
-### Methods
+#### Methods
 
-#### isValid(nationalCode: string): boolean
------
+##### isValid(nationalCode: string): boolean
+
 check nationalCode is valid?
+
 nationalCode >> شماره ثبت شرکت
-#### Example
-```
+
+##### Example
+
+```typescript
 import { Component } from '@angular/core';
 
 import {CompanyNationalIdService} from 'angular2-persian-utils'
