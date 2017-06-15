@@ -1,28 +1,90 @@
 # Angular2PersianUtils
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
+Persian utils for Angular2 apps. 
 
-## Development server
+## Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### npm
 
-## Code scaffolding
+```
+npm install angular2-persian-utils --save
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Usage
+-----
 
-## Build
+Import `PersianUtilsModule` into your app's modules:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+``` typescript
+import {PersianUtilsModule} from 'angular2-persian-utils'
 
-## Running unit tests
+@NgModule({
+  imports: [
+    PersianUtilsModule
+  ]
+})
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This makes all the `angular2-persian-utils` services available for use in your app.
 
-## Running end-to-end tests
+Available services
+---------------
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## NationalCodeService
 
-## Further help
+### Methods
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### isValid(nationalId: string): boolean
+-----
+check nationalId is valid?
+nationalId >> کد ملی
+
+#### Example
+```
+import { Component } from '@angular/core';
+
+import {NationalCodeService} from 'angular2-persian-utils'
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  constructor(private nationalCodeService: NationalCodeService) {
+        console.log(nationalCodeService.isValid('1234567890'));
+    }
+}
+```
+
+## CompanyNationalIdService
+
+### Methods
+
+#### isValid(nationalCode: string): boolean
+-----
+check nationalCode is valid?
+nationalCode >> شماره ثبت شرکت
+#### Example
+```
+import { Component } from '@angular/core';
+
+import {CompanyNationalIdService} from 'angular2-persian-utils'
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  constructor(private companyNationalIdService: CompanyNationalIdService) {
+        console.log(companyNationalIdService.isValid('12345678910'));
+    }
+}
+```
+
+## License
+
+[`MIT`](./LICENSE.md)

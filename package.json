@@ -1,16 +1,27 @@
 {
   "name": "angular2-persian-utils",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "description": "Persian utils for Angular2 applications.",
   "author": "Javad Rasouli ",
   "license": "MIT",
   "keywords": [
+    "ng2",
+    "ng",
+    "angular",
     "angular2",
+    "angularjs",
+    "pipes",
+    "filters",
+    "library",
     "persian",
-    "utils"
+    "farsi",
+    "thvsd"
+  ],
+  "files": [
+    "src",
+    "index.ts"
   ],
   "scripts": {
-    "prepublish": "ngc && copyfiles -f 'src/**/*.js' 'src/**/*.js.map' 'src/**/*.d.ts' 'src/**/*.metadata.json' ."
   },
   "repository": {
     "type": "git",
