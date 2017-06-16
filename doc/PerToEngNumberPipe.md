@@ -1,6 +1,6 @@
 ## PerToEngNumberPipe
 
-This pipe take a '[Template expressions]: https://angular.io/guide/template-syntax#!' and convert to english number.
+This pipe take a '[`Template expressions`](https://angular.io/guide/template-syntax#!)' and convert to english number.
 
 ##### Example
 

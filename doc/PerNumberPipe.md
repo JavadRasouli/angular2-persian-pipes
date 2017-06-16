@@ -1,6 +1,6 @@
 ## PerNumberPipe
 
-This pipe take a '[Template expressions]: https://angular.io/guide/template-syntax#!' and convert to persian digits.
+This pipe take a '[`Template expressions`](https://angular.io/guide/template-syntax#!)' and convert to persian digits.
 
 ##### Example
 

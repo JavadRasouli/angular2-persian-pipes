@@ -28,7 +28,7 @@ This makes all the `angular2-persian-pipes` pipes available for use in your app.
 
 ## Available pipes
 
-* [`PersianPipesModule`](./PersianPipesModule.md)
+* [`PersianPipesModule`](./doc/PersianPipesModule.md)
 * [`PerNumberPipe`](./doc/PerNumberPipe.md)
 * [`IsPerNumberPipe`](./doc/IsPerNumberPipe.md)
 * [`PerToEngNumberPipe`](./doc/PerToEngNumberPipe.md)
