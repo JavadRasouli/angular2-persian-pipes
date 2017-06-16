@@ -1,6 +1,6 @@
 ## IsPerNumberPipe
 
-This pipe take a '[`Template expressions`](https://angular.io/guide/template-syntax#!)' and check it is persian number?
+This pipe take a [`Template expressions`](https://angular.io/guide/template-syntax#!) and check it is persian number?
 
 ##### Example
 
