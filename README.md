@@ -1,92 +1,37 @@
-# Angular2PersianUtils
+# Angular2PersianPipes
 
-Persian utils for Angular2 apps. 
+Persian pipes for Angular2 apps. 
 
 ## Install
 
 ### npm
 
 ```
-npm install angular2-persian-utils --save
+npm install angular2-persian-pipes --save
 ```
 
 ## Usage
 
-Import `PersianUtilsModule` into your app's modules:
+Import `PersianPipesModule` into your app's modules:
 
 ``` typescript
-import {PersianUtilsModule} from 'angular2-persian-utils'
+import {PersianPipesModule} from 'angular2-persian-pipes'
 
 @NgModule({
   imports: [
-    PersianUtilsModule
+    PersianPipesModule
   ]
 })
 ```
 
-This makes all the `angular2-persian-utils` services available for use in your app.
+This makes all the `angular2-persian-pipes` pipes available for use in your app.
 
-## Available services
+## Available pipes
 
-### NationalCodeService
-
-#### Methods
-
-##### isValid(nationalId: string): boolean
-
-check nationalId is valid?
-
-nationalId >> کد ملی
-
-##### Example
-
-```typescript
-import { Component } from '@angular/core';
-
-import {NationalCodeService} from 'angular2-persian-utils'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-
-  constructor(private nationalCodeService: NationalCodeService) {
-        console.log(nationalCodeService.isValid('1234567890'));
-    }
-}
-```
-
-### CompanyNationalIdService
-
-#### Methods
-
-##### isValid(nationalCode: string): boolean
-
-check nationalCode is valid?
-
-nationalCode >> شماره ثبت شرکت
-
-##### Example
-
-```typescript
-import { Component } from '@angular/core';
-
-import {CompanyNationalIdService} from 'angular2-persian-utils'
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-
-  constructor(private companyNationalIdService: CompanyNationalIdService) {
-        console.log(companyNationalIdService.isValid('12345678910'));
-    }
-}
-```
+* [`PersianPipesModule`](./PersianPipesModule.md)
+* [`PerNumberPipe`](./doc/PerNumberPipe.md)
+* [`IsPerNumberPipe`](./doc/IsPerNumberPipe.md)
+* [`PerToEngNumberPipe`](./doc/PerToEngNumberPipe.md)
 
 ## License
 

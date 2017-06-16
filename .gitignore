@@ -39,6 +39,9 @@ packages/
 # dependencies
 /node_modules
 
+# develop
+/sample
+
 # IDEs and editors
 /.idea
 .project

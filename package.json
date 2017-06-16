@@ -1,7 +1,7 @@
 {
-  "name": "angular2-persian-utils",
-  "version": "0.0.8",
-  "description": "Persian utils for Angular2 applications.",
+  "name": "angular2-persian-pipes",
+  "version": "0.0.5",
+  "description": "Persian pipes for Angular2 applications.",
   "author": "Javad Rasouli ",
   "license": "MIT",
   "keywords": [
@@ -19,21 +19,22 @@
   ],
   "files": [
     "src",
-    "index.ts"
+    "index.ts",
+	"doc"
   ],
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JavadRasouli/angular2-persian-utils.git"
+    "url": "git+https://github.com/JavadRasouli/angular2-persian-pipes.git"
   },
   "bugs": {
-    "url": "https://github.com/JavadRasouli/angular2-persian-utils/issues"
+    "url": "https://github.com/JavadRasouli/angular2-persian-pipes/issues"
   },
-  "homepage": "https://github.com/JavadRasouli/angular2-persian-utils#readme",
+  "homepage": "https://github.com/JavadRasouli/angular2-persian-pipes#readme",
   "private": false,
   "dependencies": {
-    
+    "angular2-persian-utils": "^0.1.3"
   },
   "devDependencies": {
 	"@angular/common": "^4.0.0",
