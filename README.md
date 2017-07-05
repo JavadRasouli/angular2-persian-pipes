@@ -64,6 +64,60 @@ This pipe take a [`Template expressions`](https://angular.io/guide/template-synt
 <h3>{{'۱۲۳٤٥٦۷۸۹۰' | perToEngNumber}}</h3>  <!--output: 0-->
 ```
 
+## NumToPerWord
+
+This pipe take a [`Template expressions`](https://angular.io/guide/template-syntax#!) and convert to persian word.
+
+##### Example
+
+```html
+  <h3>{{'1234567890' | numToPerWord}}</h3>  <!--output: یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود-->
+  <h3>{{'۱۲۳۴۵۶۷۸۹۰' | numToPerWord}}</h3>  <!--output: یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود-->
+  <h3>{{'۱۲۳٤٥٦۷۸۹۰' | numToPerWord}}</h3>  <!--output: ۱۲۳٤٥٦۷۸۹۰ is not valid number! -->
+  <h3>{{1234567890 | numToPerWord}}</h3>  <!--output: یک میلیارد و دویست و سی و چهار میلیون و پانصد و شصت و هفت هزار و هشتصد و نود-->
+```
+
+## SafePerWord
+
+This pipe take a 'string' and replace all arabic letters with persian(e.g 'ي' and 'ك' replace with 'ی' and 'ک').
+
+##### Example
+
+```html
+  <h3>{{'انگولار يك فريمورك ساختاري براي وب اپليكيشن هاي پويا است.' | safePerWord}}</h3> <!--output: انگولار یک فریمورک ساختاری برای وب اپلیکیشن های پویا است.-->
+  <h3>{{'Angular يك فريمورك ساختاري براي وب اپليكيشن هاي پويا است.' | safePerWord}}</h3> <!--output: Angular یک فریمورک ساختاری برای وب اپلیکیشن های پویا است.-->
+```
+
+## IsNationalCode
+
+This pipe take a 'nationalCode' and check it is correctly?
+
+nationalCode >> شماره ملی
+
+##### Example
+
+```html
+  <h3>{{'0082959277' | isNationalCode}}</h3>  <!--output: true-->
+  <h3>{{'۰۰۸۲۹۵۹۲۷۷' | isNationalCode}}</h3>  <!--output: true-->
+  <h3>{{'۰۰۸۲۹٥۹۲۷۷' | isNationalCode}}</h3>  <!--output: false-->
+  <h3>{{0082959277 | isNationalCode}}</h3>  <!--output: true-->
+```
+
+## IsCompanyNationalId
+
+This pipe take a 'CompanyNationalId' and check it is correctly?
+
+CompanyNationalId >> شناسه ملی شرکت
+
+##### Example
+
+```html
+  <h3>{{'10260595692' | isCompanyNationalId}}</h3>  <!--output: true-->
+  <h3>{{'۱۰۲۶۰۵۹۵۶۹۲' | isCompanyNationalId}}</h3>  <!--output: true-->
+  <h3>{{'۱۰۲۶۰٥۹٥۶۹۲' | isCompanyNationalId}}</h3>  <!--output: false-->
+  <h3>{{10260595692 | isCompanyNationalId}}</h3>  <!--output: true-->
+```
+
 ## License
 
 [`MIT`](./LICENSE.md)
