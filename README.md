@@ -15,7 +15,7 @@ npm install angular2-persian-pipes --save
 Import `PersianPipesModule` into your app's modules:
 
 ``` typescript
-import {PersianPipesModule} from 'angular2-persian-pipes'
+import { PersianPipesModule } from 'angular2-persian-pipes';
 
 @NgModule({
   imports: [
